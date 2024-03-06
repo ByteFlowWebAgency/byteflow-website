@@ -7,6 +7,7 @@
     "start": "node server",
     "dev": "nodemon server"
   },
+  "proxy": "http://localhost:8080",
   "author": "BYTEFLOW CEO",
   "license": "ISC",
   "dependencies": {
