@@ -1,12 +1,15 @@
-// Filename - backend/server.js
-
 const express = require("express");
 const app = express();
+app.set("view engine", "ejs");
+
+const dotenv = require("dotenv").config();
+const port = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.render("index.ejs");
+  // res.send({ message: "Hello World!", email: "taj77@uakron.edu" });
 });
 
-const PORT = process.env.PORT || 8080;
-
-app.listen(PORT, console.log(`Server started on port ${PORT}`));
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
+});
