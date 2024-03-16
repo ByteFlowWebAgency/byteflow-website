@@ -1,17 +1,18 @@
 import React from "react";
 import BYTEFLOW_LOGO from "../logos/BYTEFLOW_LOGO.png";
+import "./landingPage.css";
 
 const landingpage = () => {
   return (
-    <div className="landing-page">
+    <body>
       <div className="header">
         <img
           src={BYTEFLOW_LOGO}
           alt="BYTEFLOW LOGO"
-          style={{ width: "300px", height: "auto" }}
+          style={{ width: "300px", height: "85px" }}
           className="byteflow-logo"
         />
-        <nav>
+        <nav className="nav_links">
           <ul>
             <li>
               <a href="/about">About</a>
@@ -25,10 +26,10 @@ const landingpage = () => {
           </ul>
         </nav>
         <a>
-          <button>CONNECT</button>
+          <button className="connect-btn">CONNECT</button>
         </a>
       </div>
-    </div>
+    </body>
   );
 };
 
