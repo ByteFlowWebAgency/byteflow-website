@@ -18,6 +18,11 @@ a {
   color: white;
 }
 
+.text2 a:hover {
+  color: #e2a1db;
+  transition: all 0.3s ease 0s;
+}
+
 .header {
   display: flex;
   justify-content: flex-end;
