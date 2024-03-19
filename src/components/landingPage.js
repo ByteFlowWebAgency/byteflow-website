@@ -9,7 +9,7 @@ const landingpage = () => {
         <img
           src={BYTEFLOW_LOGO}
           alt="BYTEFLOW LOGO"
-          style={{ width: "300px", height: "85px" }}
+          style={{ width: "300px", height: "90px" }}
           className="byteflow-logo"
         />
         <nav className="nav_links">
@@ -28,6 +28,13 @@ const landingpage = () => {
         <a>
           <button className="connect-btn">CONNECT</button>
         </a>
+      </div>
+
+      <div className="box">
+        <h1 className="text1">Building Byte by Byte</h1>
+        <h3 className="text2">
+          <a href="/">Setup A Consultation</a>
+        </h3>
       </div>
     </body>
   );
