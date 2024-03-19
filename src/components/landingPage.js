@@ -1,5 +1,6 @@
 import React from "react";
-import BYTEFLOW_LOGO from "../logos/BYTEFLOW_LOGO.png";
+import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
+import blackPeopleCoding from "../images/blackPeopleCoding.jpg";
 import "./landingPage.css";
 
 const landingpage = () => {
@@ -35,6 +36,21 @@ const landingpage = () => {
         <h3 className="text2">
           <a href="/">Setup A Consultation</a>
         </h3>
+      </div>
+
+      <div className="container-who-we-are">
+        <div className="who-are-we-text">
+          <h2>WHO WE ARE</h2>
+          <p>
+            Established in 2024 amidst the technological zenith and AI boom,
+            BYTEFLOW Solutions emerged from the collective expertise of six
+            visionary friends with diverse talents in the tech sector. We
+            harness our combined knowledge to offer scalable business solutions.
+          </p>
+        </div>
+        <div className="team-image">
+          <img src={blackPeopleCoding} />
+        </div>
       </div>
     </body>
   );
