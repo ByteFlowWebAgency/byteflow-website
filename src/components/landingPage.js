@@ -52,6 +52,17 @@ const landingpage = () => {
           <img src={blackPeopleCoding} />
         </div>
       </div>
+
+      <div className="our-services-container">
+        <div className="our-services">
+          <h3>Our Services</h3>
+        </div>
+      </div>
+      <div className="our-technologies-container">
+        <div className="our-technologies">
+          <h3>Our Technologies</h3>
+        </div>
+      </div>
     </body>
   );
 };

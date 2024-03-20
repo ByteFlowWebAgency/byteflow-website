@@ -81,7 +81,7 @@ button:hover {
   color: white;
   text-align: center;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Inria Sans";
   font-size: 65px;
   padding-top: 65px;
 }
@@ -120,4 +120,27 @@ button:hover {
   width: 600px;
   height: 400px;
   padding-right: 80px;
+  padding-bottom: 30px;
+}
+
+.our-services-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.our-technologies-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.our-services h3 {
+  font-size: 70px;
+  font-family: "Inria sans";
+}
+
+.our-technologies h3 {
+  font-size: 70px;
+  font-family: "Inria sans";
 }
