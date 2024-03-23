@@ -58,10 +58,23 @@ const landingpage = () => {
           <h3>Our Services</h3>
         </div>
       </div>
+
+      <div className="arrow1-container">
+        <div class="left-arrow1">&#8249;</div>
+        <div class="content">Content to be moved</div>
+        <div class="right-arrow1">&#8250;</div>
+      </div>
+
       <div className="our-technologies-container">
         <div className="our-technologies">
           <h3>Our Technologies</h3>
         </div>
+      </div>
+
+      <div className="arrow2-container">
+        <div class="arrow2 left-arrow">&#8249;</div>
+        <div class="content">Content to be moved</div>
+        <div class="arrow2 right-arrow">&#8250;</div>
       </div>
     </body>
   );

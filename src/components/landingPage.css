@@ -127,20 +127,34 @@ button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* border: solid; */
 }
 
 .our-technologies-container {
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* border: dotted; */
 }
 
 .our-services h3 {
-  font-size: 70px;
+  font-size: 40px;
   font-family: "Inria sans";
+  color: #b62ca8;
 }
 
 .our-technologies h3 {
-  font-size: 70px;
+  font-size: 40px;
   font-family: "Inria sans";
+  color: #b62ca8;
+}
+
+.arrow1-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow2-container {
+  display: flex;
+  justify-content: space-between;
 }
