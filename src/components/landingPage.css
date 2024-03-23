@@ -149,12 +149,50 @@ button:hover {
   color: #b62ca8;
 }
 
-.arrow1-container {
-  display: flex;
-  justify-content: space-between;
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-.arrow2-container {
-  display: flex;
-  justify-content: space-between;
+.image-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 60px 0;
+  background: white;
+  position: relative;
+}
+
+.image-carousel::before,
+.image-carousel::after {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, white);
+  content: "";
+  z-index: 2;
+}
+
+.image-carousel::before {
+  left: 0;
+  background: linear-gradient(to left, transparent, white);
+}
+
+.image-carousel::after {
+  right: 0;
+  background: linear-gradient(to right, transparent, white);
+}
+
+.image-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.image-slide img {
+  height: 100px;
+  margin: 0 40px;
 }

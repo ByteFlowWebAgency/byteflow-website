@@ -1,6 +1,14 @@
 import React from "react";
 import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
 import blackPeopleCoding from "../images/blackPeopleCoding.jpg";
+import PYTHON from "../images/Python-Symbol.png";
+import REACT from "../images/reactjs.png";
+import JAVASCRIPT from "../images/javascript.png";
+import NODEJS from "../images/nodejs.png";
+import SQL from "../images/sql.png";
+import PHP from "../images/php.png";
+import HTML from "../images/html.png";
+import CSS from "../images/css.png";
 import "./landingPage.css";
 
 const landingpage = () => {
@@ -59,22 +67,32 @@ const landingpage = () => {
         </div>
       </div>
 
-      <div className="arrow1-container">
-        <div class="left-arrow1">&#8249;</div>
-        <div class="content">Content to be moved</div>
-        <div class="right-arrow1">&#8250;</div>
-      </div>
-
       <div className="our-technologies-container">
         <div className="our-technologies">
           <h3>Our Technologies</h3>
         </div>
-      </div>
-
-      <div className="arrow2-container">
-        <div class="arrow2 left-arrow">&#8249;</div>
-        <div class="content">Content to be moved</div>
-        <div class="arrow2 right-arrow">&#8250;</div>
+        <div className="image-carousel">
+          <div className="image-slide">
+            <img src={PYTHON} />
+            <img src={REACT} />
+            <img src={NODEJS} />
+            <img src={SQL} />
+            <img src={PHP} />
+            <img src={JAVASCRIPT} />
+            <img src={HTML} />
+            <img src={CSS} />
+          </div>
+          <div className="image-slide">
+            <img src={PYTHON} />
+            <img src={REACT} />
+            <img src={NODEJS} />
+            <img src={SQL} />
+            <img src={PHP} />
+            <img src={JAVASCRIPT} />
+            <img src={HTML} />
+            <img src={CSS} />
+          </div>
+        </div>
       </div>
     </body>
   );
