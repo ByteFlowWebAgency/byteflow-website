@@ -127,14 +127,12 @@ button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* border: solid; */
 }
 
 .our-technologies-container {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* border: dotted; */
 }
 
 .our-services h3 {
@@ -148,15 +146,48 @@ button:hover {
   font-family: "Inria sans";
   color: #b62ca8;
 }
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+/*CSS FOR OUR SERVICES*/
+.images-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 60px 0;
+  background: white;
+  position: relative;
 }
+
+.images-carousel::before,
+.images-carousel::after {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, white);
+  content: "";
+  z-index: 2;
+}
+
+.images-carousel::before {
+  left: 0;
+  background: linear-gradient(to left, transparent, white);
+}
+
+.images-carousel::after {
+  right: 0;
+  background: linear-gradient(to right, transparent, white);
+}
+
+.images-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.images-slide img {
+  height: 150px;
+  margin: 0 40px;
+}
+/*CSS FOR OUR SERVICES END*/
+
+/* CSS FOR OUR TECHNOLOGIES */
 
 .image-carousel {
   overflow: hidden;
@@ -195,4 +226,15 @@ button:hover {
 .image-slide img {
   height: 100px;
   margin: 0 40px;
+}
+
+/* CSS FOR OUR TECHNOLOGIES END */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }

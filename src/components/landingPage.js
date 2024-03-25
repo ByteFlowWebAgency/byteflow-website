@@ -9,9 +9,16 @@ import SQL from "../images/sql.png";
 import PHP from "../images/php.png";
 import HTML from "../images/html.png";
 import CSS from "../images/css.png";
+import CWD from "../images/customWebDevlopment.png";
+import DV from "../images/dataVisualization.png";
+import MA from "../images/mobileApplication.png";
+import WM from "../images/websiteMaintenance.png";
+import BD from "../images/backendDevelopment.png";
+import DAH from "../images/domainAndHosting.png";
+import SEOO from "../images/seoOptimization.png";
 import "./landingPage.css";
 
-const landingpage = () => {
+const LandingPage = () => {
   return (
     <body>
       <div className="header">
@@ -65,6 +72,26 @@ const landingpage = () => {
         <div className="our-services">
           <h3>Our Services</h3>
         </div>
+        <div className="images-carousel">
+          <div className="images-slide">
+            <img src={CWD} />
+            <img src={DV} />
+            <img src={WM} />
+            <img src={MA} />
+            <img src={BD} />
+            <img src={DAH} />
+            <img src={SEOO} />
+          </div>
+          <div className="images-slide">
+            <img src={CWD} />
+            <img src={DV} />
+            <img src={WM} />
+            <img src={MA} />
+            <img src={BD} />
+            <img src={DAH} />
+            <img src={SEOO} />
+          </div>
+        </div>
       </div>
 
       <div className="our-technologies-container">
@@ -98,4 +125,4 @@ const landingpage = () => {
   );
 };
 
-export default landingpage;
+export default LandingPage;
