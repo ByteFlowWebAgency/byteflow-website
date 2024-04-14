@@ -5,6 +5,8 @@
   background-color: transparent;
 }
 
+/* START OF HEADER SECTION */
+
 li,
 a {
   font-family: sans-serif;
@@ -68,6 +70,9 @@ button:hover {
   background-color: rgba(98, 12, 111, 0.8);
 }
 
+/* END OF HEADER SECTION */
+
+/* START OF INTRO BOX SECTION  */
 .box {
   justify-content: center;
   align-items: center;
@@ -95,6 +100,9 @@ button:hover {
   text-decoration: underline;
 }
 
+/* END OF INTRO BOX SECTION */
+
+/* START OF WHO WE ARE SECTION  */
 .container-who-we-are {
   display: flex;
   justify-content: flex-end;
@@ -146,6 +154,8 @@ button:hover {
   font-family: "Inria sans";
   color: #b62ca8;
 }
+/* END OF WHO WE ARE SECTION  */
+
 /*CSS FOR OUR SERVICES*/
 .images-carousel {
   overflow: hidden;
@@ -228,8 +238,6 @@ button:hover {
   margin: 0 40px;
 }
 
-/* CSS FOR OUR TECHNOLOGIES END */
-
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -237,4 +245,35 @@ button:hover {
   to {
     transform: translateX(-100%);
   }
+}
+
+/* CSS FOR OUR TECHNOLOGIES END */
+
+/* START OF FOOTER  */
+
+.footer {
+  padding: 70px 0;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-column {
+  padding: 50px;
+}
+
+#horizontal-line {
+  height: 2px;
+  background-color: black;
+}
+
+.footer-column p {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.footer-column h2 {
+  font-family: sans-serif;
 }
