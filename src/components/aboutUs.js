@@ -1,16 +1,22 @@
 import React from "react";
 import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
+<<<<<<< HEAD
 import Instagram from '../images/Instagram_icon.png.webp';
 import LinkedIn from '../images/linkedin.png';
 import Discord from '../images/discord.png';
 import CEO from '../images/CEO.jpeg';
+=======
+import Instagram from "../images/Instagram_icon.png.webp";
+import LinkedIn from "../images/linkedin.png";
+import Discord from "../images/discord.png";
+>>>>>>> b9df30160b6ead0c2d9dac9096802090fb0b523c
 
-import "./aboutUs.css";
+import "../styles/aboutUs.css";
 
 const AboutUs = () => {
   return (
-   <body>
-    <div className="header">
+    <body>
+      <div className="header">
         <img
           src={BYTEFLOW_LOGO}
           alt="BYTEFLOW LOGO"
@@ -36,6 +42,7 @@ const AboutUs = () => {
       </div>
 
       <div className="about-us">
+<<<<<<< HEAD
       <div className="header-image">
         {/* Background image at the top */}
       </div>
@@ -80,19 +87,59 @@ const AboutUs = () => {
             and teamwork lead to better solutions.</p>
         </div>
       </div>
+=======
+        <div className="header-image">{/* Background image at the top */}</div>
+        <div className="ceo-message">
+          <img src="path-to-ceo-image.jpg" alt="CEO" />
+          <blockquote>"Your inspiring quote here."</blockquote>
+        </div>
+        <div className="values">
+          {/* Four value propositions with text */}
+          <div className="value">
+            <h3>Value 1</h3>
+            <p>Description for value 1</p>
+          </div>
+          <div className="value">
+            <h3>Value 2</h3>
+            <p>Description for value 2</p>
+          </div>
+          <div className="value">
+            <h3>Value 3</h3>
+            <p>Description for value 3</p>
+          </div>
+          <div className="value">
+            <h3>Value 4</h3>
+            <p>Description for value 4</p>
+          </div>
+        </div>
+>>>>>>> b9df30160b6ead0c2d9dac9096802090fb0b523c
 
-      <div className="about-headers"><h2>Get to Know Us!</h2>
+        <div className="about-headers">
+          <h2>Get to Know Us!</h2>
+        </div>
+
+        <div className="social-media">
+          <img
+            src={Instagram}
+            title="Instagram"
+            alt="Instagram"
+            className="social-media-icon"
+          />
+          <img
+            src={LinkedIn}
+            title="LinkedIn"
+            alt="LinkedIn"
+            className="social-media-icon"
+          />
+          <img
+            src={Discord}
+            title="Discord"
+            alt="Discord"
+            className="social-media-icon"
+          />
+        </div>
       </div>
-
-      <div className="social-media">
-        
-      <img src={Instagram} title="Instagram" alt="Instagram" className="social-media-icon" />
-      <img src={LinkedIn} title="LinkedIn" alt="LinkedIn" className="social-media-icon" />
-      <img src={Discord} title="Discord" alt="Discord" className="social-media-icon" />
-    </div>
-    </div>
-
-   </body>
+    </body>
   );
 };
 
