@@ -16,7 +16,7 @@ import WM from "../images/websiteMaintenance.png";
 import BD from "../images/backendDevelopment.png";
 import DAH from "../images/domainAndHosting.png";
 import SEOO from "../images/seoOptimization.png";
-import "./landingPage.css";
+import "../styles/landingPage.css";
 
 const LandingPage = () => {
   return (
