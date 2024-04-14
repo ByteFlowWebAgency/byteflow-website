@@ -1,7 +1,33 @@
 import React from "react";
+import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
 
 const ourTeam = () => {
-  return <h1>This is the Our Team Page</h1>;
+  return (
+    <div className="header">
+        <img
+          src={BYTEFLOW_LOGO}
+          alt="BYTEFLOW LOGO"
+          style={{ width: "300px", height: "90px" }}
+          className="byteflow-logo"
+        />
+        <nav className="nav_links">
+          <ul>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/ourTeam">Our Team</a>
+            </li>
+            <li>
+              <a href="/ourSolutions">Solutions</a>
+            </li>
+          </ul>
+        </nav>
+        <a>
+          <button className="connect-btn">CONNECT</button>
+        </a>
+      </div>
+  );
 };
 
 export default ourTeam;
