@@ -2,6 +2,11 @@ import React from "react";
 import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
 import "../styles/ourTeam.css";
 import CEO from "../images/CEO.jpeg";
+import PRESIDENT from "../images/President.png";
+import CFO from "../images/CFO.png";
+import CSO from "../images/CSO.png";
+import LSWE from "../images/LSWE.png";
+import COO from "../images/COO.png";
 
 const ourTeam = () => {
   return (
@@ -48,30 +53,30 @@ const ourTeam = () => {
         <div className="team-member">
           <img src={CEO} />
           <h3>Tyrone Johnson</h3>
-          <h3>Founder/CEO</h3>
+          <h3>Founder & CEO</h3>
         </div>
         <div className="team-member">
-          <img />
+          <img src={PRESIDENT} />
           <h3>Adam Mitchell-Lewis</h3>
           <h3>President</h3>
         </div>
         <div className="team-member">
-          <img />
+          <img src={COO} />
           <h3>Samuel Ndubuisi</h3>
-          <h3>COO</h3>
+          <h3>Cheif Operations Officer</h3>
         </div>
         <div className="team-member">
-          <img />
+          <img src={CSO} />
           <h3>Bryan Bernard</h3>
-          <h3>CSO</h3>
+          <h3>Cyber Security Officer</h3>
         </div>
         <div className="team-member">
-          <img />
+          <img src={LSWE} />
           <h3>Michael Ameteku</h3>
           <h3>Lead Software Developer</h3>
         </div>
         <div className="team-member">
-          <img />
+          <img src={CFO} />
           <h3>Kevin Asamoah</h3>
           <h3>CFO</h3>
         </div>
