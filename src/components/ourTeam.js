@@ -1,6 +1,7 @@
 import React from "react";
 import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
 import "../styles/ourTeam.css";
+import CEO from "../images/CEO.jpeg";
 
 const ourTeam = () => {
   return (
@@ -40,6 +41,39 @@ const ourTeam = () => {
             we're adventurers and artists, fueling our passions as fiercely as
             our projects."
           </h3>
+        </div>
+      </div>
+
+      <div className="team-container">
+        <div className="team-member">
+          <img src={CEO} />
+          <h3>Tyrone Johnson</h3>
+          <h3>Founder/CEO</h3>
+        </div>
+        <div className="team-member">
+          <img />
+          <h3>Adam Mitchell-Lewis</h3>
+          <h3>President</h3>
+        </div>
+        <div className="team-member">
+          <img />
+          <h3>Samuel Ndubuisi</h3>
+          <h3>COO</h3>
+        </div>
+        <div className="team-member">
+          <img />
+          <h3>Bryan Bernard</h3>
+          <h3>CSO</h3>
+        </div>
+        <div className="team-member">
+          <img />
+          <h3>Michael Ameteku</h3>
+          <h3>Lead Software Developer</h3>
+        </div>
+        <div className="team-member">
+          <img />
+          <h3>Kevin Asamoah</h3>
+          <h3>CFO</h3>
         </div>
       </div>
 

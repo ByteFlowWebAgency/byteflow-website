@@ -109,6 +109,29 @@ button:hover {
 
 /* END OF INTRO BOX SECTION */
 
+/* START OF TEAM SECTION */
+
+.team-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.team-member {
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.team-member img {
+  width: 400px;
+  height: 420px;
+  border-radius: 15%;
+}
+
+/* END OF TEAM SECTION */
+
 /* START OF FOOTER  */
 
 .footer {
@@ -139,32 +162,3 @@ button:hover {
 }
 
 /* END OF THE FOOTER */
-
-/* START OF FOOTER  */
-
-.footer {
-  padding: 70px 0;
-}
-
-.footer-row {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-column {
-  padding: 50px;
-}
-
-#horizontal-line {
-  height: 2px;
-  background-color: black;
-}
-
-.footer-column p {
-  font-size: 20px;
-  padding-top: 5px;
-}
-
-.footer-column h2 {
-  font-family: sans-serif;
-}
