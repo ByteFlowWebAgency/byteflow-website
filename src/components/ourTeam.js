@@ -42,6 +42,31 @@ const ourTeam = () => {
           </h3>
         </div>
       </div>
+
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-row">
+            <div className="footer-column">
+              <img src={BYTEFLOW_LOGO} />
+              <h2>byteflowservices@gmail.com</h2>
+            </div>
+            <div className="footer-column">
+              <h2>Services</h2>
+              <div id="horizontal-line"></div>
+              <p>Website Maintenance</p>
+              <p>Custom Web Development</p>
+              <p>Mobile App Development</p>
+            </div>
+            <div className="footer-column">
+              <h2>About Us</h2>
+              <div id="horizontal-line"></div>
+              <p>Portfolio</p>
+              <p>Packages</p>
+              <p>About Us</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </body>
   );
 };

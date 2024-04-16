@@ -80,7 +80,6 @@ button:hover {
   height: 275px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: linear-gradient(to right, #7b17ae, #ac28cd);
-  /* background-color: #b62ca8; */
 }
 
 .text1 {
@@ -93,9 +92,9 @@ button:hover {
 }
 
 .text-box {
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text2 {
@@ -140,3 +139,32 @@ button:hover {
 }
 
 /* END OF THE FOOTER */
+
+/* START OF FOOTER  */
+
+.footer {
+  padding: 70px 0;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-column {
+  padding: 50px;
+}
+
+#horizontal-line {
+  height: 2px;
+  background-color: black;
+}
+
+.footer-column p {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.footer-column h2 {
+  font-family: sans-serif;
+}
