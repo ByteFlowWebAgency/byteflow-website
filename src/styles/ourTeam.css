@@ -80,7 +80,6 @@ button:hover {
   height: 275px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: linear-gradient(to right, #7b17ae, #ac28cd);
-  /* background-color: #b62ca8; */
 }
 
 .text1 {
@@ -93,9 +92,9 @@ button:hover {
 }
 
 .text-box {
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text2 {
@@ -109,6 +108,29 @@ button:hover {
 }
 
 /* END OF INTRO BOX SECTION */
+
+/* START OF TEAM SECTION */
+
+.team-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.team-member {
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.team-member img {
+  width: 400px;
+  height: 440px;
+  border-radius: 15%;
+}
+
+/* END OF TEAM SECTION */
 
 /* START OF FOOTER  */
 
