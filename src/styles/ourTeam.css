@@ -132,6 +132,17 @@ button:hover {
 
 /* END OF TEAM SECTION */
 
+/* START OF JOIN OUR TEAM SECTION */
+
+.join-team-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 70px;
+}
+
+/* END OF JOIN OUR TEAM SECTION */
+
 /* START OF FOOTER  */
 
 .footer {
