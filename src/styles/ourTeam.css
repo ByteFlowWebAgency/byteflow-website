@@ -132,33 +132,3 @@ button:hover {
 
 /* END OF TEAM SECTION */
 
-/* START OF FOOTER  */
-
-.footer {
-  padding: 70px 0;
-}
-
-.footer-row {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-column {
-  padding: 50px;
-}
-
-#horizontal-line {
-  height: 2px;
-  background-color: black;
-}
-
-.footer-column p {
-  font-size: 20px;
-  padding-top: 5px;
-}
-
-.footer-column h2 {
-  font-family: sans-serif;
-}
-
-/* END OF THE FOOTER */
