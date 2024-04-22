@@ -133,6 +133,7 @@ button:hover {
 /* END OF TEAM SECTION */
 
 /* START OF JOIN OUR TEAM SECTION */
+
 .join-team-container {
   display: flex;
   flex-direction: column;
@@ -203,6 +204,8 @@ button:hover {
 input::placeholder {
   color: #aaa;
 }
+
+/* END OF JOIN OUR TEAM SECTION */
 
 /* START OF FOOTER  */
 
