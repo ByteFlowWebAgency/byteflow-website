@@ -16,7 +16,11 @@ import WM from "../images/websiteMaintenance.png";
 import BD from "../images/backendDevelopment.png";
 import DAH from "../images/domainAndHosting.png";
 import SEOO from "../images/seoOptimization.png";
+
+/* Import Styles */
 import "../styles/landingPage.css";
+import "../styles/footerStyles.css";
+import "../styles/headerStyles.css";
 
 const LandingPage = () => {
   return (
@@ -28,6 +32,7 @@ const LandingPage = () => {
           style={{ width: "300px", height: "90px" }}
           className="byteflow-logo"
         />
+         
         <nav className="nav_links">
           <ul>
             <li>
@@ -44,6 +49,8 @@ const LandingPage = () => {
         <a>
           <button className="connect-btn">CONNECT</button>
         </a>
+        
+       
       </div>
 
       <div className="box">

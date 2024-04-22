@@ -1,12 +1,16 @@
 import React from "react";
 import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
-import "../styles/ourTeam.css";
 import CEO from "../images/CEO.jpeg";
 import PRESIDENT from "../images/President.png";
 import CFO from "../images/CFO.png";
 import CSO from "../images/CSO.png";
 import LSWE from "../images/LSWE.png";
 import COO from "../images/COO.png";
+
+/* Import Styles */
+import "../styles/ourTeam.css";
+import "../styles/footerStyles.css";
+import "../styles/headerStyles.css";
 
 const ourTeam = () => {
   return (
@@ -18,6 +22,7 @@ const ourTeam = () => {
           style={{ width: "300px", height: "90px" }}
           className="byteflow-logo"
         />
+         
         <nav className="nav_links">
           <ul>
             <li>
@@ -34,6 +39,8 @@ const ourTeam = () => {
         <a>
           <button className="connect-btn">CONNECT</button>
         </a>
+        
+       
       </div>
 
       <div className="box">
