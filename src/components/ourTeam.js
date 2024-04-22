@@ -82,22 +82,7 @@ const ourTeam = () => {
         </div>
       </div>
 
-      <div className="join-team-container">
-        <h1>Looking To Join Our Team?</h1>
-        <div className="join-form">
-          <form>
-            <label>First Name:</label>
-            <input type="text"></input>
-            <label>Last Name:</label>
-            <input type="text"></input>
-            <label>Email:</label>
-            <input type="text"></input>
-            <label>Phone Number:</label>
-            <input type="text"></input>
-            <input type="submit"></input>
-          </form>
-        </div>
-      </div>
+      <div class="join-team-container"></div>
 
       <footer className="footer">
         <div className="container">
