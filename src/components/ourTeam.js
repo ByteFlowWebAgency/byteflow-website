@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { InputText } from "primereact/inputtext";
 import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
 import "../styles/ourTeam.css";
 import CEO from "../images/CEO.jpeg";
@@ -7,7 +8,6 @@ import CFO from "../images/CFO.png";
 import CSO from "../images/CSO.png";
 import LSWE from "../images/LSWE.png";
 import COO from "../images/COO.png";
-/* Import Styles */
 import "../styles/footerStyles.css";
 import "../styles/headerStyles.css";
 
@@ -35,12 +35,12 @@ const OurTeam = () => {
     // Here you can perform any additional actions, such as sending the form data to a server
     console.log(formData);
     // Reset form fields
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-    });
+    // setFormData({
+    //   firstName: "",
+    //   lastName: "",
+    //   email: "",
+    //   phone: "",
+    // });
   };
 
   return (
@@ -123,10 +123,9 @@ const OurTeam = () => {
           <div class="form-group">
             <div class="name-group">
               <label for="first-name">First Name:</label>
-              <input
-                type="text"
+              <InputText
                 id="first-name"
-                name="first-name"
+                name="firstName"
                 placeholder="Enter your first name"
                 value={formData.firstName}
                 onChange={handleInputChange}
@@ -135,10 +134,9 @@ const OurTeam = () => {
             </div>
             <div class="name-group">
               <label for="last-name">Last Name:</label>
-              <input
-                type="text"
+              <InputText
                 id="last-name"
-                name="last-name"
+                name="lastName"
                 placeholder="Enter your last name"
                 value={formData.lastName}
                 onChange={handleInputChange}
@@ -149,8 +147,7 @@ const OurTeam = () => {
           <div class="form-group">
             <div class="contact-group">
               <label for="email">Email:</label>
-              <input
-                type="email"
+              <InputText
                 id="email"
                 name="email"
                 placeholder="Enter your email"
@@ -161,8 +158,7 @@ const OurTeam = () => {
             </div>
             <div class="contact-group">
               <label for="phone">Phone Number:</label>
-              <input
-                type="tel"
+              <InputText
                 id="phone"
                 name="phone"
                 placeholder="Enter your phone number"
