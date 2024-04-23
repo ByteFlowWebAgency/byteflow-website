@@ -1,9 +1,9 @@
 // src/routes.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import AboutUsPage from "./components/aboutUs";
-import LandingPage from "./components/landingPage";
-import OurSolutions from "./components/ourSolutions";
+import AboutUsPage from "./components/AboutUs";
+import LandingPage from "./components/LandingPage";
+import OurSolutions from "./components/OurSolutions";
 import OurTeam from "./components/OurTeam";
 
 const Routting = () => {
