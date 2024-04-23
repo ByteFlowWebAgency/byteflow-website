@@ -1,18 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
+import "../styles/ourTeam.css";
 import CEO from "../images/CEO.jpeg";
 import PRESIDENT from "../images/President.png";
 import CFO from "../images/CFO.png";
 import CSO from "../images/CSO.png";
 import LSWE from "../images/LSWE.png";
 import COO from "../images/COO.png";
-
 /* Import Styles */
-import "../styles/ourTeam.css";
 import "../styles/footerStyles.css";
 import "../styles/headerStyles.css";
 
-const ourTeam = () => {
+const OurTeam = () => {
+  // State variables to store form data
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+  });
+
+  // Function to handle input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Function to handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can perform any additional actions, such as sending the form data to a server
+    console.log(formData);
+    // Reset form fields
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+    });
+  };
+
   return (
     <body>
       <div className="header">
@@ -22,7 +52,7 @@ const ourTeam = () => {
           style={{ width: "300px", height: "90px" }}
           className="byteflow-logo"
         />
-         
+
         <nav className="nav_links">
           <ul>
             <li>
@@ -39,8 +69,6 @@ const ourTeam = () => {
         <a>
           <button className="connect-btn">CONNECT</button>
         </a>
-        
-       
       </div>
 
       <div className="box">
@@ -89,6 +117,67 @@ const ourTeam = () => {
         </div>
       </div>
 
+      <div class="join-team-container">
+        <h1>Looking To Join Our Team?</h1>
+        <form class="join-form" onSubmit={handleSubmit}>
+          <div class="form-group">
+            <div class="name-group">
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Enter your first name"
+                value={formData.firstName}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div class="name-group">
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Enter your last name"
+                value={formData.lastName}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="contact-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div class="contact-group">
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                value={formData.phone}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+          </div>
+          <button type="submit" onSubmit={handleSubmit}>
+            Connect
+          </button>
+        </form>
+      </div>
+
       <footer className="footer">
         <div className="container">
           <div className="footer-row">
@@ -117,4 +206,4 @@ const ourTeam = () => {
   );
 };
 
-export default ourTeam;
+export default OurTeam;
