@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
-import "../styles/OurTeam.css";
+import "../styles/ourTeam.css";
 import CEO from "../images/CEO.jpeg";
 import PRESIDENT from "../images/President.png";
 import CFO from "../images/CFO.png";
 import CSO from "../images/CSO.png";
 import LSWE from "../images/LSWE.png";
 import COO from "../images/COO.png";
+/* Import Styles */
+import "../styles/footerStyles.css";
+import "../styles/headerStyles.css";
 
 const OurTeam = () => {
   // State variables to store form data
@@ -49,6 +52,7 @@ const OurTeam = () => {
           style={{ width: "300px", height: "90px" }}
           className="byteflow-logo"
         />
+
         <nav className="nav_links">
           <ul>
             <li>
@@ -115,7 +119,7 @@ const OurTeam = () => {
 
       <div class="join-team-container">
         <h1>Looking To Join Our Team?</h1>
-        <form class="join-form">
+        <form class="join-form" onSubmit={handleSubmit}>
           <div class="form-group">
             <div class="name-group">
               <label for="first-name">First Name:</label>
@@ -168,7 +172,9 @@ const OurTeam = () => {
               />
             </div>
           </div>
-          <button type="submit">Connect</button>
+          <button type="submit" onSubmit={handleSubmit}>
+            Connect
+          </button>
         </form>
       </div>
 
