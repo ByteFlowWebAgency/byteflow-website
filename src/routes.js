@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AboutUsPage from "./components/aboutUs";
 import LandingPage from "./components/landingPage";
 import OurSolutions from "./components/ourSolutions";
-import OurTeam from "./components/ourTeam";
+import OurTeam from "./components/OurTeam";
 
 const Routting = () => {
   return (

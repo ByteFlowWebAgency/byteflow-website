@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
-import "../styles/ourTeam.css";
+import "../styles/OurTeam.css";
 import CEO from "../images/CEO.jpeg";
 import PRESIDENT from "../images/President.png";
 import CFO from "../images/CFO.png";
@@ -8,7 +8,38 @@ import CSO from "../images/CSO.png";
 import LSWE from "../images/LSWE.png";
 import COO from "../images/COO.png";
 
-const ourTeam = () => {
+const OurTeam = () => {
+  // State variables to store form data
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+  });
+
+  // Function to handle input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Function to handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can perform any additional actions, such as sending the form data to a server
+    console.log(formData);
+    // Reset form fields
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+    });
+  };
+
   return (
     <body>
       <div className="header">
@@ -93,6 +124,8 @@ const ourTeam = () => {
                 id="first-name"
                 name="first-name"
                 placeholder="Enter your first name"
+                value={formData.firstName}
+                onChange={handleInputChange}
                 required
               />
             </div>
@@ -103,6 +136,8 @@ const ourTeam = () => {
                 id="last-name"
                 name="last-name"
                 placeholder="Enter your last name"
+                value={formData.lastName}
+                onChange={handleInputChange}
                 required
               />
             </div>
@@ -115,6 +150,8 @@ const ourTeam = () => {
                 id="email"
                 name="email"
                 placeholder="Enter your email"
+                value={formData.email}
+                onChange={handleInputChange}
                 required
               />
             </div>
@@ -125,6 +162,8 @@ const ourTeam = () => {
                 id="phone"
                 name="phone"
                 placeholder="Enter your phone number"
+                value={formData.phone}
+                onChange={handleInputChange}
                 required
               />
             </div>
@@ -161,4 +200,4 @@ const ourTeam = () => {
   );
 };
 
-export default ourTeam;
+export default OurTeam;
