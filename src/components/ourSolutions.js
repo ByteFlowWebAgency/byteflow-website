@@ -9,7 +9,7 @@ import CUSTOMWEBAPP from "../images/Build-Custom-Web-Apps.png";
 import AI from "../images/e178cc_2827938e9eed4cfc8399a62f3787dde2_mv2.webp";
 import MOBILEAPP from "../images/phone-mobile-application-development-concept-mobile-internet-3d-illustration_76964-5164.avif";
 
-const ourSolutions = () => {
+const OurSolutions = () => {
   return (
     <body>
       <div className="header">
@@ -150,4 +150,4 @@ const ourSolutions = () => {
   );
 };
 
-export default ourSolutions;
+export default OurSolutions;
