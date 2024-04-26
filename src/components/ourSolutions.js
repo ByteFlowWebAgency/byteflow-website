@@ -54,70 +54,82 @@ const OurSolutions = () => {
       </div>
 
       <div className="services-container">
-        <div className="service">
-          <div className="image-container2">
-            <img src={MOBILEAPP} />
-          </div>
-          <div className="service-content2">
-            <h1>Mobile Application</h1>
-            <h3>
-              Our mobile application development service is more than just
-              coding; it's crafting digital experiences that captivate and
-              engage your audience. From intuitive UI designs to robust backend
-              systems, we transform your ideas into high-performance mobile apps
-              that drive growth and elevate your brand. Embrace the power of
-              mobility with BYTEFLOW, and let's create something extraordinary
-              together.
-            </h3>
-          </div>
-        </div>
-        <div className="service">
-          <div className="service-content">
-            <h1>Custom Web Application</h1>
-            <h3>
-              Our custom web development service is your gateway to a tailored
-              online presence that reflects your unique identity and goals. With
-              cutting-edge technologies and a keen eye for design, we build
-              websites that not only look stunning but also deliver seamless
-              functionality and unparalleled performance. Join forces with
-              BYTEFLOW, and let's redefine what's possible on the web.
-            </h3>
-          </div>
-          <div className="image-container">
-            <img src={CUSTOMWEBAPP} />
+        <div id="transition-right">
+          <div className="service">
+            <div className="image-container2">
+              <img src={MOBILEAPP} />
+            </div>
+            <div className="service-content2">
+              <h1>Mobile Application</h1>
+              <h3>
+                Our mobile application development service is more than just
+                coding; it's crafting digital experiences that captivate and
+                engage your audience. From intuitive UI designs to robust
+                backend systems, we transform your ideas into high-performance
+                mobile apps that drive growth and elevate your brand. Embrace
+                the power of mobility with BYTEFLOW, and let's create something
+                extraordinary together.
+              </h3>
+            </div>
           </div>
         </div>
-        <div className="service">
-          <div className="image-container2">
-            <img src={AI} />
-          </div>
-          <div className="service-content2">
-            <h1>AI + Data Automation</h1>
-            <h3>
-              Our expertise in artificial intelligence and automation empowers
-              you to harness the full potential of your data, driving
-              efficiency, productivity, and innovation across your organization.
-              From predictive analytics to intelligent automation, BYTEFLOW is
-              your partner in navigating the complexities of the digital age.
-            </h3>
+
+        <div id="transition-left">
+          <div className="service">
+            <div className="service-content">
+              <h1>Custom Web Application</h1>
+              <h3>
+                Our custom web development service is your gateway to a tailored
+                online presence that reflects your unique identity and goals.
+                With cutting-edge technologies and a keen eye for design, we
+                build websites that not only look stunning but also deliver
+                seamless functionality and unparalleled performance. Join forces
+                with BYTEFLOW, and let's redefine what's possible on the web.
+              </h3>
+            </div>
+            <div className="image-container">
+              <img src={CUSTOMWEBAPP} />
+            </div>
           </div>
         </div>
-        <div className="service">
-          <div className="service-content">
-            <h1>Custom Software Development</h1>
-            <h3>
-              Off-the-shelf solutions can only take you so far; to truly
-              differentiate and thrive in today's competitive landscape, you
-              need software that's as unique as your business. That's where we
-              come in. Our team of expert developers works closely with you to
-              understand your goals and challenges, crafting bespoke software
-              solutions that address your specific needs and propel your
-              business forward. Partner with BYTEFLOW, and let's build the
-              future together, one line of code at a time.
-            </h3>
+
+        <div id="transition-right">
+          <div className="service">
+            <div className="image-container2">
+              <img src={AI} />
+            </div>
+            <div className="service-content2">
+              <h1>AI + Data Automation</h1>
+              <h3>
+                Our expertise in artificial intelligence and automation empowers
+                you to harness the full potential of your data, driving
+                efficiency, productivity, and innovation across your
+                organization. From predictive analytics to intelligent
+                automation, BYTEFLOW is your partner in navigating the
+                complexities of the digital age.
+              </h3>
+            </div>
           </div>
-          <div className="image-container">
-            <img src={CUSTOMSWEDEVELOPMENT} />
+        </div>
+
+        <div id="transition-left">
+          <div className="service">
+            <div className="service-content">
+              <h1>Custom Software Development</h1>
+              <h3>
+                Off-the-shelf solutions can only take you so far; to truly
+                differentiate and thrive in today's competitive landscape, you
+                need software that's as unique as your business. That's where we
+                come in. Our team of expert developers works closely with you to
+                understand your goals and challenges, crafting bespoke software
+                solutions that address your specific needs and propel your
+                business forward. Partner with BYTEFLOW, and let's build the
+                future together, one line of code at a time.
+              </h3>
+            </div>
+            <div className="image-container">
+              <img src={CUSTOMSWEDEVELOPMENT} />
+            </div>
           </div>
         </div>
       </div>

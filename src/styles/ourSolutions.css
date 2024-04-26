@@ -67,6 +67,33 @@ h3 {
 
 /* SERVICES START */
 
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-700px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(700px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+#transition-left {
+  animation: slide-in-left 3s ease-in;
+}
+#transition-right {
+  animation: slide-in-right 3s ease-in;
+}
+
 .services-container {
   padding-top: 70px;
   padding-bottom: 70px;
