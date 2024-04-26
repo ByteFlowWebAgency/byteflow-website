@@ -4,8 +4,6 @@ import Instagram from "../images/Instagram_icon.png.webp";
 import LinkedIn from "../images/linkedin.png";
 import Discord from "../images/discord.png";
 import CEO from "../images/CEO.jpeg";
-
-/* Import Styles */
 import "../styles/aboutUs.css";
 import "../styles/footerStyles.css";
 import "../styles/headerStyles.css";
@@ -20,7 +18,7 @@ const AboutUs = () => {
           style={{ width: "300px", height: "90px" }}
           className="byteflow-logo"
         />
-        
+
         <nav className="nav_links">
           <ul>
             <li>
@@ -37,21 +35,32 @@ const AboutUs = () => {
         <a>
           <button className="connect-btn">CONNECT</button>
         </a>
-        
-       
       </div>
 
       <div className="about-us">
-        <div className="header-image">{/* Background image at the top */}
-        </div>
+        <div className="header-image">{/* Background image at the top */}</div>
         <div className="ceo-message">
           <img src={CEO} alt="CEO" title="Tyrone Johnson" />
-          <blockquote><strong>"He who holds the clarity holds the plan."</strong></blockquote>
+          <blockquote>
+            <strong>"He who holds the clarity holds the plan."</strong>
+          </blockquote>
           <p>
-            <span><strong>BYTEFLOW</strong>, a platform merging community service with cutting-edge software </span>
-            <span>engineering, was born from my desire to blend my passions seamlessly. </span>
-            <span>By leveraging technology, we aim to revolutionize how communities access resources, support, and </span>
-            <span>information. With BYTEFLOW, we're not just coding; we're crafting solutions that make </span>
+            <span>
+              <strong>BYTEFLOW</strong>, a platform merging community service
+              with cutting-edge software{" "}
+            </span>
+            <span>
+              engineering, was born from my desire to blend my passions
+              seamlessly.{" "}
+            </span>
+            <span>
+              By leveraging technology, we aim to revolutionize how communities
+              access resources, support, and{" "}
+            </span>
+            <span>
+              information. With BYTEFLOW, we're not just coding; we're crafting
+              solutions that make{" "}
+            </span>
             <span>a tangible difference in people's lives.</span>
           </p>
 
@@ -149,20 +158,19 @@ const AboutUs = () => {
 
 export default AboutUs;
 
-
-const fadeElements = document.querySelectorAll('.fade-in');
+const fadeElements = document.querySelectorAll(".fade-in");
 
 const fadeIn = () => {
-  fadeElements.forEach(element => {
+  fadeElements.forEach((element) => {
     const elementTop = element.getBoundingClientRect().top;
     const elementBottom = element.getBoundingClientRect().bottom;
 
     if (elementTop < window.innerHeight && elementBottom >= 0) {
       element.style.opacity = 1;
-      element.style.transform = 'translateY(0)';
+      element.style.transform = "translateY(0)";
     }
   });
 };
 
-window.addEventListener('scroll', fadeIn);
-window.addEventListener('load', fadeIn);
+window.addEventListener("scroll", fadeIn);
+window.addEventListener("load", fadeIn);
