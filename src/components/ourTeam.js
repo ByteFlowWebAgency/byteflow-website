@@ -34,7 +34,7 @@ const OurTeam = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/signup", {
+      const response = await fetch("/api/joinus", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
