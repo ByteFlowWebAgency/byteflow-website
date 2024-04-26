@@ -30,8 +30,22 @@ const OurTeam = () => {
   };
 
   // Function to handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    try {
+      const response = await fetch("/api/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      console.log(data); // Handle response from the server
+    } catch (error) {
+      console.error("Error:", error);
+    }
     // Here you can perform any additional actions, such as sending the form data to a server
     console.log(formData);
     // Reset form fields
