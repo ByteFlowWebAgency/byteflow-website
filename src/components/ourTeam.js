@@ -35,12 +35,12 @@ const OurTeam = () => {
     // Here you can perform any additional actions, such as sending the form data to a server
     console.log(formData);
     // Reset form fields
-    // setFormData({
-    //   firstName: "",
-    //   lastName: "",
-    //   email: "",
-    //   phone: "",
-    // });
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+    });
   };
 
   return (
