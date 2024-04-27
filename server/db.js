@@ -5,18 +5,20 @@ dotenv.config();
 
 const pool = mysql
   .createPool({
-    host: process.env.DB_HOST,
-    port: process.env.DB_PORT,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
+    host: "127.0.0.1",
+    port: "3306",
+    user: "root",
+    password: "T@90hns0n245",
+    database: "join_us_form",
   })
   .promise();
 
-async function getData() {
-  const [rows] = await pool.query("SELECT * FROM join_us_form");
-  return rows;
-}
+const result = await pool.query("SELECT * FROM users");
+console.log(result);
+// async function getData() {
+//   const [rows] = await pool.query("SELECT * FROM users");
+//   return rows;
+// }
 
-const data = await getData();
-console.log(data);
+// const data = await getData();
+// console.log(data);
