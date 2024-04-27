@@ -13,12 +13,10 @@ const pool = mysql
   })
   .promise();
 
-const result = await pool.query("SELECT * FROM users");
-console.log(result);
-// async function getData() {
-//   const [rows] = await pool.query("SELECT * FROM users");
-//   return rows;
-// }
+async function getData() {
+  const [rows] = await pool.query("SELECT * FROM users");
+  return rows;
+}
 
-// const data = await getData();
-// console.log(data);
+const data = await getData();
+console.log(data);
