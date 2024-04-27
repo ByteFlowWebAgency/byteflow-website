@@ -1,10 +1,10 @@
 // src/routes.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import AboutUsPage from "./components/AboutUs";
-import LandingPage from "./components/LandingPage";
-import OurSolutions from "./components/OurSolutions";
-import OurTeam from "./components/OurTeam";
+import AboutUsPage from "./components/AboutUs.jsx";
+import LandingPage from "./components/LandingPage.jsx";
+import OurSolutions from "./components/OurSolutions.jsx";
+import OurTeam from "./components/OurTeam.jsx";
 
 const Routting = () => {
   return (
