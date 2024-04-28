@@ -5,6 +5,8 @@ import LinkedIn from "../images/linkedin.png";
 import Discord from "../images/discord.png";
 import CEO from "../images/CEO.jpeg";
 import "../styles/aboutUs.css";
+import "../styles/footerStyles.css";
+import "../styles/headerStyles.css";
 
 const AboutUs = () => {
   return (
@@ -16,8 +18,12 @@ const AboutUs = () => {
           style={{ width: "300px", height: "90px" }}
           className="byteflow-logo"
         />
+
         <nav className="nav_links">
           <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
             <li>
               <a href="/about">About</a>
             </li>
@@ -37,12 +43,28 @@ const AboutUs = () => {
       <div className="about-us">
         <div className="header-image">{/* Background image at the top */}</div>
         <div className="ceo-message">
-          <img src={CEO} alt="CEO" />
-          <blockquote>"He who holds the clarity holds the plan."</blockquote>
+          <img src={CEO} alt="CEO" title="Tyrone Johnson" />
+          <blockquote>
+            <strong>"He who holds the clarity holds the plan."</strong>
+          </blockquote>
           <p>
-            I wanted to create something that combines my passions to serve
-            communities and software engineering! That’s when I thought of
-            starting BYTEFLOW!
+            <span>
+              <strong>BYTEFLOW</strong>, a platform merging community service
+              with cutting-edge software{" "}
+            </span>
+            <span>
+              engineering, was born from my desire to blend my passions
+              seamlessly.{" "}
+            </span>
+            <span>
+              By leveraging technology, we aim to revolutionize how communities
+              access resources, support, and{" "}
+            </span>
+            <span>
+              information. With BYTEFLOW, we're not just coding; we're crafting
+              solutions that make{" "}
+            </span>
+            <span>a tangible difference in people's lives.</span>
           </p>
 
           <h4>Tyrone Johnson</h4>
@@ -109,8 +131,49 @@ const AboutUs = () => {
           />
         </div>
       </div>
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-row">
+            <div className="footer-column">
+              <img src={BYTEFLOW_LOGO} />
+              <h2>byteflowservices@gmail.com</h2>
+            </div>
+            <div className="footer-column">
+              <h2>Services</h2>
+              <div id="horizontal-line"></div>
+              <p>Website Maintenance</p>
+              <p>Custom Web Development</p>
+              <p>Mobile App Development</p>
+            </div>
+            <div className="footer-column">
+              <h2>About Us</h2>
+              <div id="horizontal-line"></div>
+              <p>Portfolio</p>
+              <p>Packages</p>
+              <p>About Us</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </body>
   );
 };
 
 export default AboutUs;
+
+const fadeElements = document.querySelectorAll(".fade-in");
+
+const fadeIn = () => {
+  fadeElements.forEach((element) => {
+    const elementTop = element.getBoundingClientRect().top;
+    const elementBottom = element.getBoundingClientRect().bottom;
+
+    if (elementTop < window.innerHeight && elementBottom >= 0) {
+      element.style.opacity = 1;
+      element.style.transform = "translateY(0)";
+    }
+  });
+};
+
+window.addEventListener("scroll", fadeIn);
+window.addEventListener("load", fadeIn);

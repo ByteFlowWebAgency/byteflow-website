@@ -132,6 +132,81 @@ button:hover {
 
 /* END OF TEAM SECTION */
 
+/* START OF JOIN OUR TEAM SECTION */
+
+.join-team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px; /* Shift the entire container down */
+  padding-bottom: 50px;
+  background-color: #ac28cd;
+}
+
+.join-team-container h1 {
+  padding-bottom: 30px;
+  font-size: 80px;
+}
+
+.join-form {
+  width: 100%;
+  max-width: 600px; /* Enlarge the form */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increase space between form groups */
+  display: flex;
+  justify-content: space-between; /* Even space between form elements */
+}
+
+.form-group label {
+  flex: 1;
+  margin-left: 10px; /* Align labels to the left */
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.form-group .name-group,
+.form-group .contact-group {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.form-group .name-group input,
+.form-group .contact-group input {
+  width: 100%; /* Expand input fields to fill available space */
+  padding: 15px; /* Enlarge padding */
+  font-size: 18px; /* Increase font size */
+  border: 2px solid #ccc; /* Enlarge border */
+  border-radius: 8px; /* Enlarge border radius */
+  background-color: white;
+}
+
+button {
+  width: 93%;
+  margin-right: 10px;
+  padding: 15px; /* Enlarge padding */
+  font-size: 18px; /* Increase font size */
+  border: 2px solid #ccc; /* Enlarge border */
+  border-radius: 8px; /* Enlarge border radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c51fb7;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* END OF JOIN OUR TEAM SECTION */
+
 /* START OF FOOTER  */
 
 .footer {
@@ -162,3 +237,4 @@ button:hover {
 }
 
 /* END OF THE FOOTER */
+

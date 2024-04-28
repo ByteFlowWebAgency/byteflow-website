@@ -17,6 +17,8 @@ import BD from "../images/backendDevelopment.png";
 import DAH from "../images/domainAndHosting.png";
 import SEOO from "../images/seoOptimization.png";
 import "../styles/landingPage.css";
+import "../styles/footerStyles.css";
+import "../styles/headerStyles.css";
 
 const LandingPage = () => {
   return (
@@ -28,8 +30,12 @@ const LandingPage = () => {
           style={{ width: "300px", height: "90px" }}
           className="byteflow-logo"
         />
+
         <nav className="nav_links">
           <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
             <li>
               <a href="/about">About</a>
             </li>

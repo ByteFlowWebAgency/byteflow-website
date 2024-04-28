@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { InputText } from "primereact/inputtext";
 import BYTEFLOW_LOGO from "../images/BYTEFLOW_LOGO.png";
 import "../styles/ourTeam.css";
 import CEO from "../images/CEO.jpeg";
@@ -7,8 +8,55 @@ import CFO from "../images/CFO.png";
 import CSO from "../images/CSO.png";
 import LSWE from "../images/LSWE.png";
 import COO from "../images/COO.png";
+import "../styles/footerStyles.css";
+import "../styles/headerStyles.css";
 
-const ourTeam = () => {
+const OurTeam = () => {
+  // State variables to store form data
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone_number: "",
+  });
+
+  // Function to handle input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Function to handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:8080/ourTeam", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      console.log(data); // Handle response from the server
+    } catch (error) {
+      console.error("Error:", error);
+    }
+
+    // Reset form fields
+    setFormData({
+      first_name: "",
+      last_name: "",
+      email: "",
+      phone_number: "",
+    });
+  };
+
   return (
     <body>
       <div className="header">
@@ -18,8 +66,12 @@ const ourTeam = () => {
           style={{ width: "300px", height: "90px" }}
           className="byteflow-logo"
         />
+
         <nav className="nav_links">
           <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
             <li>
               <a href="/about">About</a>
             </li>
@@ -82,6 +134,63 @@ const ourTeam = () => {
         </div>
       </div>
 
+      <div class="join-team-container">
+        <h1>Looking To Join Our Team?</h1>
+        <form class="join-form" onSubmit={handleSubmit}>
+          <div class="form-group">
+            <div class="name-group">
+              <label for="first-name">First Name:</label>
+              <InputText
+                id="first-name"
+                name="first_name"
+                placeholder="Enter your first name"
+                value={formData.first_name}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div class="name-group">
+              <label for="last-name">Last Name:</label>
+              <InputText
+                id="last-name"
+                name="last_name"
+                placeholder="Enter your last name"
+                value={formData.last_name}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="contact-group">
+              <label for="email">Email:</label>
+              <InputText
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div class="contact-group">
+              <label for="phone">Phone Number:</label>
+              <InputText
+                id="phone"
+                name="phone_number"
+                placeholder="Enter your phone number"
+                value={formData.phone_number}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+          </div>
+          <button type="submit" onSubmit={handleSubmit}>
+            Connect
+          </button>
+        </form>
+      </div>
+
       <footer className="footer">
         <div className="container">
           <div className="footer-row">
@@ -110,4 +219,4 @@ const ourTeam = () => {
   );
 };
 
-export default ourTeam;
+export default OurTeam;
