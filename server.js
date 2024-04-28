@@ -23,6 +23,17 @@ app.use(express.json());
 
 app.use(cors());
 
+// GET request to fetch all users
+app.get("/users", async (req, res) => {
+  try {
+    const users = await getUsers(); // Assuming getUsers() function retrieves all users from the database
+    res.status(200).json(users);
+  } catch (error) {
+    console.error("Error fetching users: ", error);
+    res.status(500).json({ success: false, message: "internal server error" });
+  }
+});
+
 // app POST request
 app.post("/ourTeam", async (req, res) => {
   console.log("Request Body:", req.body);
