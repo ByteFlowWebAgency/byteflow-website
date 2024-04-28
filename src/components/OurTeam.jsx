@@ -14,10 +14,10 @@ import "../styles/headerStyles.css";
 const OurTeam = () => {
   // State variables to store form data
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    first_name: "",
+    last_name: "",
     email: "",
-    phone: "",
+    phone_number: "",
   });
 
   // Function to handle input changes
@@ -30,16 +30,30 @@ const OurTeam = () => {
   };
 
   // Function to handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can perform any additional actions, such as sending the form data to a server
-    console.log(formData);
+
+    try {
+      const response = await fetch("http://localhost:8080/ourTeam", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      console.log(data); // Handle response from the server
+    } catch (error) {
+      console.error("Error:", error);
+    }
+
     // Reset form fields
     setFormData({
-      firstName: "",
-      lastName: "",
+      first_name: "",
+      last_name: "",
       email: "",
-      phone: "",
+      phone_number: "",
     });
   };
 
@@ -125,9 +139,9 @@ const OurTeam = () => {
               <label for="first-name">First Name:</label>
               <InputText
                 id="first-name"
-                name="firstName"
+                name="first_name"
                 placeholder="Enter your first name"
-                value={formData.firstName}
+                value={formData.first_name}
                 onChange={handleInputChange}
                 required
               />
@@ -136,9 +150,9 @@ const OurTeam = () => {
               <label for="last-name">Last Name:</label>
               <InputText
                 id="last-name"
-                name="lastName"
+                name="last_name"
                 placeholder="Enter your last name"
-                value={formData.lastName}
+                value={formData.last_name}
                 onChange={handleInputChange}
                 required
               />
@@ -160,9 +174,9 @@ const OurTeam = () => {
               <label for="phone">Phone Number:</label>
               <InputText
                 id="phone"
-                name="phone"
+                name="phone_number"
                 placeholder="Enter your phone number"
-                value={formData.phone}
+                value={formData.phone_number}
                 onChange={handleInputChange}
                 required
               />
