@@ -5,10 +5,10 @@ dotenv.config();
 
 const pool = mysql
   .createPool({
-    host: process.env.MYSQL_HOST,
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DATABASE,
+    host: "us-cluster-east-01.k8s.cleardb.net",
+    user: "bdc97cf031355c",
+    password: "26c1f90d",
+    database: "heroku_5706a2f1fa929c6",
   })
   .promise();
 

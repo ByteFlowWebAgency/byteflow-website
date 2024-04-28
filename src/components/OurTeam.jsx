@@ -34,13 +34,16 @@ const OurTeam = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/ourTeam", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://byteflow-website-main-d621de538164.herokuapp.com/ourTeam",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await response.json();
       console.log(data); // Handle response from the server
