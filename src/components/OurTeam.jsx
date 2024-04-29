@@ -35,7 +35,7 @@ const OurTeam = () => {
 
     try {
       const response = await fetch(
-        "https://byteflow-website-main-d621de538164.herokuapp.com/ourTeam",
+        "https://byteflow-website.vercel.app/ourTeam",
         {
           method: "POST",
           headers: {
