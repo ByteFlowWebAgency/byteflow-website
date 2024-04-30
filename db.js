@@ -5,25 +5,25 @@ dotenv.config();
 
 const pool = mysql
   .createPool({
-    host: "us-cluster-east-01.k8s.cleardb.net",
-    user: "bdc97cf031355c",
-    password: "26c1f90d",
-    database: "heroku_5706a2f1fa929c6",
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.MYSQL_DATABASE,
   })
   .promise();
 
 export async function getUsers() {
-  const rows = await pool.query("SELECT * FROM users");
+  const rows = await pool.query("SELECT * FROM users;");
   return rows;
 }
 
-export async function createUser(first_name, last_name, email, phone_number) {
+export async function createUser(first_name, last_name, phone_number, email) {
   const result = await pool.query(
     `
-  INSERT INTO users (first_name, last_name, email, phone_number)
-  VALUES (?, ?, ?, ?)
+  INSERT INTO users (first_name, last_name, phone_number, email)
+  VALUES (?, ?, ?, ?);
   `,
-    [first_name, last_name, email, phone_number]
+    [first_name, last_name, phone_number, email]
   );
   return result;
 }

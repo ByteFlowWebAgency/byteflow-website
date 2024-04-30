@@ -39,8 +39,8 @@ app.post("/ourTeam", async (req, res) => {
   console.log("Request Body:", req.body);
 
   try {
-    const { first_name, last_name, email, phone_number } = req.body;
-    const user = await createUser(first_name, last_name, email, phone_number);
+    const { first_name, last_name, phone_number, email } = req.body;
+    const user = await createUser(first_name, last_name, phone_number, email);
     res.status(201).send(user);
   } catch (error) {
     console.error("Error creating user: ", error);
@@ -49,6 +49,6 @@ app.post("/ourTeam", async (req, res) => {
 });
 
 // listen for PORT
-app.listen(process.env.PORT || PORT, () => {
+app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
